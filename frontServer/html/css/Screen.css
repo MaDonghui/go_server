@@ -1,0 +1,433 @@
+/* universal begin */
+body {
+  font-size: calc(1em + 0.3vw);
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  background: white;
+  text-indent: inherit;
+  line-height: normal;
+  page-break-after: unset;
+  page-break-before: unset;
+  orphans: initial;
+  widows: unset;
+}
+
+strong {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+a:visited {
+  color: black;
+}
+
+a:link {
+  color: black;
+}
+
+a:active {
+  font-size: 1.2em;
+}
+
+a:hover {
+  color: blue;
+}
+
+input:focus {
+  height: 40px;
+}
+
+table {
+  border-spacing: unset;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* universal ends */
+
+/* header begin */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0 20px;
+
+  font-weight: bold;
+  background-color: white;
+}
+
+/* header non semantic bottom border */
+header::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 60px;
+
+  margin: 0 2%;
+
+  height: 1px;
+  width: 96%;
+  background-color: black;
+}
+
+#business {
+  display: flex;
+  align-items: center;
+}
+
+#business img {
+  width: 60px;
+  padding-right: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  font-size: calc(0.6em + 0.3vw);
+}
+
+nav a {
+  margin: 0 0.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+/* header ends */
+
+/* main begin */
+main {
+  margin-top: 80px;
+}
+
+/* banner begin */
+#banner {
+  position: relative;
+
+  padding: 0 15px;
+}
+
+#banner video {
+  width: 100%;
+}
+
+#banner div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  position: absolute;
+  left: 6%;
+
+  width: 30vw;
+  height: 100%;
+}
+
+#banner h1 {
+  font: bold calc(2em + 0.8vw) "Quicksand";
+  padding: 5px 0;
+}
+
+#banner h2 {
+  font: calc(0.6em + 0.4vw) "Quicksand";
+}
+/* banner ends */
+
+/* inventory begin */
+
+#inventory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inventory h1 {
+  font: calc(1.5em + 0.5vw) "Open Sans", Arial, Helvetica, sans-serif;
+
+  padding: 10px 0 10px 0;
+}
+
+#inventory form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#inventory caption {
+  color: rgba(0, 0, 0, 0.2);
+  padding-bottom: 15px;
+  caption-side: initial;
+}
+
+#inventory table {
+  table-layout: fixed;
+  width: 90%;
+}
+
+#inventory tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+#inventory th,
+#inventory td {
+  text-align: center;
+  vertical-align: middle;
+  font: bold calc(0.7em + 0.5vw) "Quicksand";
+  padding: 10px 0;
+}
+
+#inventory tr > *:first-child {
+  width: 260px;
+}
+
+tr.items td img {
+  height: 260px;
+}
+
+.newPhone input {
+  width: 70%;
+}
+
+#inventory button {
+  width: 90%;
+  height: 50px;
+  padding: 5px 30px;
+  margin: 5px;
+  font-size: 1em;
+}
+
+#phoneTable th.sortable:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+#phoneTable th.sortable:active {
+  color: rgb(0, 75, 0);
+}
+/* inventory end */
+
+/* top start */
+#top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 10%;
+  padding: 2.5%;
+}
+
+#top h1 {
+  font: bold calc(1.4em + 0.3vw) "Quicksand";
+}
+
+#topBrands {
+  width: 45%;
+  margin-right: 10%;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+dd {
+  padding: 5px 0 0 10px;
+  font: lighter calc(0.7em + 0.5vw) "Quicksand";
+}
+
+#topPhones {
+  width: 45%;
+}
+
+#topPhones ol {
+  list-style: decimal;
+}
+
+#topPhones ol li {
+  font-weight: bold;
+
+  margin-top: 5px;
+  margin-left: 10px;
+}
+/* top ends */
+
+/* reasons begin */
+#reasons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: blanchedalmond;
+  font-size: calc(1em + 0.3vw);
+
+  margin: 20px;
+  padding: 20px;
+}
+
+#reasons h1 {
+  margin: 20px 50px;
+  font-weight: 700;
+}
+
+#reasons ul {
+  list-style-type: square;
+  list-style-position: inherit;
+  list-style-image: none;
+}
+
+#reasons li {
+  padding: 5px 5px;
+}
+/* reasons ends */
+
+/* cellPlan begin */
+#cellPlan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  margin: 30px 2.5%;
+}
+
+#cellPlan h1,
+#cellPlan h2 {
+  font: bold calc(1.5em + 0.3vw) "Open Sans";
+  margin-bottom: 20px;
+}
+
+figure {
+  position: relative;
+}
+
+figure img {
+  width: 95%;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+  right: 30%;
+
+  text-align: left;
+  font: bold calc(0.8em + 1vw) "Quicksand";
+  background-color: rgba(255, 255, 255, 0.5);
+
+  padding: 3vw 6vw;
+}
+
+#cellPlan table {
+  table-layout: fixed;
+  width: 90%;
+  border-collapse: collapse;
+  border: black 1px solid;
+}
+
+#cellPlan th,
+#cellPlan td {
+  padding: 5px 0;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  vertical-align: middle;
+}
+/* cellPlan ends */
+/* main ends */
+
+/* footer begin */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* footer end */
+
+/* media query */
+
+/* inventory table */
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 5px;
+    flex-direction: column;
+  }
+
+  #banner h1 {
+    font: 2em "Quicksand";
+  }
+
+  #banner h2 {
+    display: none;
+  }
+
+  #business img {
+    width: 30px;
+  }
+
+  #inventory tr {
+    margin-bottom: 10px;
+  }
+
+  #inventory tr:first-child {
+    display: none;
+  }
+
+  #inventory tr > *:first-child {
+    width: 100%;
+    text-align: center;
+  }
+
+  #inventory tr,
+  td {
+    display: block;
+  }
+
+  #inventory td {
+    text-align: right;
+    padding: 5px 10px;
+  }
+
+  #inventory td:nth-child(2)::before,
+  #inventory td:nth-child(3)::before,
+  #inventory td:nth-child(4)::before,
+  #inventory td:nth-child(5)::before {
+    content: attr(data-label);
+    float: left;
+  }
+
+  #inventory img {
+    height: 150px;
+  }
+
+  #top {
+    flex-direction: column;
+  }
+
+  figcaption {
+    position: initial;
+    text-align: center;
+  }
+}

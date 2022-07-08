@@ -1,0 +1,197 @@
+<!--BROWSER COMPATIBILITY:
+     We include an open-source CSS reset file, reset.css, 
+     from http://meyerweb.com/eric/tools/css/reset/ which resets the user agent stylesheet 
+     so that only the styles we have defined are used. This aims to eliminate the differences between browsers. 
+     To test this we viewed our page in Chrome and Firefox and, as expected, the experience is very similar.
+    
+     In firefox developer edition 73.Ob3, 
+     Orphans and Widows CSS properties can not be recognised as a valid.
+     This issue doesn't arise in Chrome 79.0.3945.117.
+     This isn't a problem in our case as the value does not change the appearance of the website and these are generally not critical features of a website stylesheet. 
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="https://contivioadmin.weebly.com/uploads/1/9/2/8/19286741/_________1428719.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/Screen.css">
+    <link rel="stylesheet" href="./css/Print.css" media="print">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/sortTable.js" type="text/javascript"></script>
+    <script src="./js/reset.js" type="text/javascript"></script>
+    <script src="./js/submit.js" type="text/javascript"></script>
+    <script src="./js/productTable.js" type="text/javascript"></script>
+
+    <title>nT Mobile</title>
+</head>
+
+<body>
+    <header>
+        <div id="business">
+            <h1 class="visuallyhidden">Google Pixel 4 promotion video</h1>
+            <img src="https://contivioadmin.weebly.com/uploads/1/9/2/8/19286741/_________1428719.png"
+                alt="Not T Mobile Logo">
+            <h1>nT Mobile</h1>
+        </div>
+
+        <nav>
+            <a href="#banner">Deals</a>
+            <a href="#inventory">Mobiles</a>
+            <a href="#top">Chart</a>
+            <a href="#cellPlan">Plans</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+            <div>
+                <h1>Pixel&nbsp;4</h1>
+                <h2>You can tell it's smart <br> By its giant forehead ¯\_(ツ)_/¯</h2>
+            </div>
+            <video autoplay muted>
+
+                <source type="video/mp4"
+                    src="https://storage.googleapis.com/mannequin/blobs/555a3ad208987bf0c30f7cfeec037634.mp4">
+            </video>
+        </section>
+
+        <section id="inventory">
+            <h1>for You, <em>the Best</em></h1>
+
+            <form action="http://localhost:8000" method="post" id="newPhone">
+                <table id="phoneTable">
+                    <caption>Recommended Phones</caption>
+                    <tbody>
+                        <tr class="columnheaders">
+                            <th>Image</th>
+                            <th class="sortable" onclick="sortTable(1, false)">Brand</th>
+                            <th class="sortable" onclick="sortTable(2, false)">Model</th>
+                            <th class="sortable" onclick="sortTable(3, true)">Screen Size (Inches)</th>
+                            <th class="sortable" onclick="sortTable(4, false)"><abbr title="Operating System">OS</abbr></th>
+                        </tr>
+
+                        <tr class="newPhone">
+                            <td data-label="Image">
+                                <label for="image" class="visuallyhidden">image</label>
+                                <input type="url" name="image" id="image" placeholder="Enter URL..." required>
+                            </td>
+                            <td data-label="Brand">
+                                <label for="brand" class="visuallyhidden">brand</label>
+                                <input type="text" name="brand" id="brand" placeholder="brand" required>
+                            </td>
+                            <td data-label="Model">
+                                <label for="model" class="visuallyhidden">model</label>
+                                <input type="text" name="model" id="model" placeholder="model" required>
+                            </td>
+                            <td data-label="Screen Size">
+                                <label for="screensize" class="visuallyhidden">screen size</label>
+                                <input type="number" name="screensize" id="screensize" placeholder="screen size" step="1" required>
+                            </td>
+                            <td data-label="OS">
+                                <label for="os" class="visuallyhidden">Operating System</label>
+                                <input type="text" name="os" id="os" placeholder="Operating System" required>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button>Submit</button>
+                <button type="reset" id="reset">Reset</button>
+            </form>
+        </section>
+
+        <section id="top">
+            <section id="topBrands">
+                <h1>Most Popular Brands</h1>
+                <dl>
+                    <dt>Apple</dt>
+                    <dd>The famous American tech brand with the signature iPhone line.</dd>
+
+                    <dt>Google</dt>
+                    <dd>The search engine giant launched its Pixel line in 2013</dd>
+
+                    <dt>OnePlus</dt>
+                    <dd>One of many breakout successes from the Chinese city of Shenzhen</dd>
+                </dl>
+            </section>
+
+            <section id="topPhones">
+                <h1>Best Seller this week</h1>
+                <ol>
+                    <li>iPhone 11</li>
+                    <li>OnePlus 7T Pro</li>
+                    <li>Google Pixel 4</li>
+                </ol>
+            </section>
+        </section>
+
+        <section id="reasons">
+            <h1>Reasons to choose us</h1>
+            <ul>
+                <li>Fast Delivery</li>
+                <li>Extended Warranty</li>
+                <li>Competitive Pricing</li>
+            </ul>
+        </section>
+
+        <section id="cellPlan">
+            <h1>Our advantages</h1>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1457317680121-ef12e98979e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+                    alt="female customer on her phone">
+                <figcaption>One of our customers making use of our extensive coverage</figcaption>
+            </figure>
+            <h2>We offer you things no one else can bring</h2>
+            <table>
+                <caption>Company Comparison</caption>
+                <tr>
+                    <th>Company</th>
+                    <td><strong>nT Mobile</strong></td>
+                    <td>T Mobile</td>
+                    <td>KPN</td>
+                    <td>Lebara</td>
+                </tr>
+                <tr>
+                    <th>Coverage</th>
+                    <td><strong>98%</strong></td>
+                    <td>92%</td>
+                    <td>91%</td>
+                    <td>87%</td>
+                </tr>
+                <tr>
+                    <th>Delivery</th>
+                    <td><strong>Next Day</strong></td>
+                    <td>2-3 Days</td>
+                    <td>1 Day</td>
+                    <td>1-2 Day(s)</td>
+                </tr>
+                <tr>
+                    <th>Warranty</th>
+                    <td><strong>24 Months</strong></td>
+                    <td>18 Months</td>
+                    <td>6 Months</td>
+                    <td>12 Months</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <span>nT Mobile&trade;</span>
+        <pre>
+            {\__/}
+            (●_●)
+            ( >📱</pre>
+    </footer>
+</body>
+
+
+</html>
